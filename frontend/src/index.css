@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
+
+/* Container */
+.container {
+  padding: 40px;
+}
+
+/* Glass Card Effect */
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* Inputs */
+input {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Links */
+a {
+  color: #8b5cf6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

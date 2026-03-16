@@ -1,26 +1,33 @@
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import LandingPage from "./pages/LandingPage";
 import Login from "./pages/Login";
-import Dashboard from "./pages/Dashboard";
-import PrivateRoute from "./components/PrivateRoute";
 import Register from "./pages/Register";
+import Dashboard from "./pages/Dashboard";
+
+import PrivateRoute from "./components/PrivateRoute";
 import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <BrowserRouter>
 
-      {/* ✅ Navbar Outside Routes So It Shows Everywhere */}
+      {/* Navbar visible on all pages */}
       <Navbar />
 
       <Routes>
 
-        {/* ✅ Login */}
+        {/* Landing Page */}
+        <Route path="/" element={<LandingPage />} />
+
+        {/* Login */}
         <Route path="/login" element={<Login />} />
 
-        {/* ✅ Register */}
+        {/* Register */}
         <Route path="/register" element={<Register />} />
 
-        {/* ✅ Protected Dashboard */}
+        {/* Protected Dashboard */}
         <Route
           path="/dashboard"
           element={
